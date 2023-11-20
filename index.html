@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Zapatos</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Tienda de Zapatos</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#hombres">Hombres</a></li>
+          <li><a href="#mujeres">Mujeres</a></li>
+          <li><a href="#niños">Niños</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos">
+        <button type="button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/imagen-carousel-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/imagen-carousel-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/imagen-carousel-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+
+    
+    <!-- Ejemplo de carta con producto -->
+    <div class="product-card">
+      <img src="./assets/img/imagen-producto.jpg" alt="Calzado 1">
+      <div class="card-body">
+        <h5 class="card-title">Nike airforce retro 4</h5>
+        <p class="card-text">Nike airforce retro 4 importadas de colombia originales.</p>
+        <h4>210$</h4>
+
+        <button class="btn btn-success">Comprar</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+        <img src="./assets/img/imagen-producto-2.jpg" alt="Calzado 2">
+        <div class="card-body">
+          <h5 class="card-title">Jordans two3</h5>
+          <p class="card-text">Jortans originales.</p>
+          <h4>364$</h4>
+          <button class="btn btn-success">Comprar</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <img src="./assets/img/imagen-producto-3.jpg" alt="Calzado 3">
+        <div class="card-body">
+          <h5 class="card-title">airforce one niña</h5>
+          <p class="card-text">airforce usadas de niña rosado.</p>
+          <h4>110$</h4>
+          <button class="btn btn-success">Comprar</button>
+        </div>
+      </div>
+
+
+
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+        <h2>Contacta con Nosotros</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+      </div>
+
+      
+
+  <footer>
+    <div class="container">
+      <h4>Síguenos en Redes Sociales</h4>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
